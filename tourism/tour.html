@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="tour.css" >
+</head>
+
+<body>
+    <div id="sectionHome">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="Tourism-Home ">
+                    <nav class="navbar navbar-expand-lg navbar-dark  nav-bg ">
+                        <a class="navbar-brand logo-name " href="#">
+                            <img class="sr-logo" src="http://skyrimromance.com/wp-content/uploads/2016/05/Skyrimromancelogo.png" />
+                            <span class="logo-tourism"> Tourism</span>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                            <div class="navbar-nav ml-auto">
+                                <a class="nav-link active nav-name text-info" href="#sectionHome" onclick="display('sectionHome')">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-link  nav-name text-info" href="#sectionExplore" onclick="display('sectionExplore')">Explore</a>
+                                <a class="nav-link  nav-name text-info" href="#Follow-us">FollowUs</a>
+                                <button type="button" class="btn nav-login text-white" data-toggle="modal" data-target="#exampleModal">
+                                    LOGIN
+                                </button>
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Log In</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+
+                                                <div class=" log-in-container col-12 text-center pt-3  pb-4 p-2 m-auto">
+                                                    <div class="">
+                                                        <h1 class="login">Login</h1>
+                                                        <input class="text-center input-box">
+                                                        <h1 class="login pt-2">Password</h1>
+                                                        <input class="input-box">
+                                                        <p class="pt-2">Don't Have an account?<a href=""> SignUp</a></p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" onclick="display('sectionHome') " data-dismiss="modal">Close</button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="d-flex flex-column justify-content-end text-center col-12 col-md-12 mb-5 mt-5 ">
+                        <div class="Expore-container text-center ">
+                            <h1 class="Home-head p-2">EXPLORE<span class="world"> WORLD</span></h1>
+                            <p class="home-para p-2">Let's Make the Soul to be free</p>
+                            <div class="">
+                                <button class="explore-button " onclick="display('sectionExplore')">Explore</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="container con ">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="text-center follow-us-section-heading pt-3 " id="Follow-us">Follow Us</h1>
+                        </div>
+                        <div class=" d-flex flex-column justify-content-center col-12 col-md-6 pt-3   mb-2">
+                            <div class="follow-us-icon-container ">
+                                <i class="fab fa-twitter fa-spin icon1"></i> <span class="social-id">SR_Company</span>
+                            </div>
+                            <div class="follow-us-icon-container">
+                                <i class="fab fa-instagram fa-spin icon2"></i> <span class="social-id">EXPLORE_WITH_SR</span>
+                            </div>
+                            <div class="follow-us-icon-container">
+                                <i class="fab fa-facebook fa-spin fa-xs icon3 "></i> <span class="social-id">SR_Company</span>
+                            </div>
+                            <div class="follow-us-icon-container">
+                                <i class="far fa-envelope fa-spin icon4"></i> <span class="social-id">srtourism@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 text-center  col-12 col-md-6 ml-auto">
+                            <img class="follow-us-sr-logo pb-2" src="http://skyrimromance.com/wp-content/uploads/2016/05/Skyrimromancelogo.png" />
+                            <h1 class="follow-us-company-name pb-2">SR_Company</h1>
+                            <p class="follow-us-company-address">4th Cross,Near SBI Bank,Tillai Nagar,Trichy-621216.</p>
+                        </div>
+                        <div class="col-12 text-center">
+                            <div>
+                                <hr class="hr-line text-center" />
+                            </div>
+                            <i class="fas fa-copyright icon-copy-right "><span class="follow-us-copyright"> 2023 by Sriram.Created with HTML,CSS,bootstrap</span></i>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div id="sectionExplore">
+        <div class="container-fluid explore-bg">
+            <div class="row">
+                <div class="col-12 Explore-section-head mb-2 p-3">
+                    <h1>Tourist Places</h1>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4  mb-4">
+                    <div class="Explore-section-container shadow bg-white ">
+                        <img class="w-100" src="https://wallpapercave.com/wp/wp6016803.jpg " />
+                        <h1 class="Explore-section-container-name pt-3">Name:<span class="Explore-section-container-span"> Taj Mahal</span></h1>
+                        <h1 class="Explore-section-container-name">Place:<span class="Explore-section-container-span"> Agra,Delhi</span></h1>
+                        <a href="#taj" onclick="display('sectionTajmahal')" class="view">
+                            View All
+                            <svg width="20px" height="40px" viewBox="0 0 20 20" class="bi bi-arrow-right-short" fill="red" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="w-100  Explore-section-container shadow  ">
+                        <img class="w-100" src="https://wallpapercave.com/wp/wp4109816.jpg" />
+                        <h1 class="Explore-section-container-name pt-3">Name:<span class="Explore-section-container-span"> Red Fort</span></h1>
+                        <h1 class="Explore-section-container-name">Place:<span class="Explore-section-container-span"> Delhi</span></h1>
+                        <a href="#sectionRedfort" onclick="display('sectionRedfort')" class="view">
+                            View All
+                            <svg width="20px" height="40px" viewBox="0 0 20 20" class="bi bi-arrow-right-short" fill="red" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="Explore-section-container shadow ">
+                        <img class="w-100" src="https://wallpapercave.com/wp/wp3326955.jpg" />
+                        <h1 class="Explore-section-container-name pt-3">Name:<span class="Explore-section-container-span"> India Gate</span></h1>
+                        <h1 class="Explore-section-container-name">Place:<span class="Explore-section-container-span"> Mumbai</span></h1>
+                        <a href="#sectionMumbaiGate" class="view" onclick="display('sectionMumbaiGate')">
+                            View All
+                            <svg width="20px" height="40px" viewBox="0 0 20 20" class="bi bi-arrow-right-short" fill="red" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="Explore-section-container shadow ">
+                        <img class="w-100" src="https://wallpapercave.com/wp/wp8551434.jpg" />
+                        <h1 class="Explore-section-container-name pt-3">Name:<span class="Explore-section-container-span"> Mysore Palace</span></h1>
+                        <h1 class="Explore-section-container-name">Place:<span class="Explore-section-container-span"> Karnataka</span></h1>
+                        <a href="#sectionMysorepalace" class="view" onclick="display('sectionMysorepalace')">
+                            View All
+                            <svg width="20px" height="40px" viewBox="0 0 20 20" class="bi bi-arrow-right-short" fill="red" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="Explore-section-container shadow">
+                        <img class="w-100" src="https://wallpapercave.com/wp/wp5392754.jpg" />
+                        <h1 class="Explore-section-container-name pt-3">Name:<span class="Explore-section-container-span"> Brihadishvara Temple, </span></h1>
+                        <h1 class="Explore-section-container-name">Place:<span class="Explore-section-container-span"> Tamil Nadu</span></h1>
+                        <a href="#sectionThajavur" class="view" onclick="display('sectionThajavur')">
+                            View All
+                            <svg width="20px" height="40px" viewBox="0 0 20 20" class="bi bi-arrow-right-short" fill="red" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="Explore-section-container shadow">
+                        <img class="w-100" src="https://wallpaperaccess.com/full/2714802.jpg" />
+                        <h1 class="Explore-section-container-name pt-3">Name:<span class="Explore-section-container-span"> Vaarnasi Temple</span></h1>
+                        <h1 class="Explore-section-container-name">Place:<span class="Explore-section-container-span"> Uttar Pradesh</span></h1>
+                        <a href="#sectionVaranasi" class="view" onclick="display('sectionVaranasi')">
+                            View All
+                            <svg width="20px" height="40px" viewBox="0 0 20 20" class="bi bi-arrow-right-short" fill="red" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="Explore-section-container shadow">
+                        <img class="w-100" src="https://wallpapercave.com/wp/wp7029007.jpg" />
+                        <h1 class="Explore-section-container-name pt-3">Name:<span class="Explore-section-container-span"> Shyok river </span></h1>
+                        <h1 class="Explore-section-container-name">Place:<span class="Explore-section-container-span"> Ladakh</span></h1>
+                        <a href="#sectionShyok" class="view" onclick="display('sectionShyok')">
+                            View All
+                            <svg width="20px" height="40px" viewBox="0 0 20 20" class="bi bi-arrow-right-short" fill="red" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="Explore-section-container shadow ">
+                        <img class="w-100" src="https://www.itl.cat/pngfile/big/188-1884032_calangute-beach-goa-view-wallpaper-calangute-beach-goa.jpg" />
+                        <h1 class="Explore-section-container-name pt-3">Name:<span class="Explore-section-container-span"> calangute beach </span></h1>
+                        <h1 class="Explore-section-container-name">Place:<span class="Explore-section-container-span"> Goa</span></h1>
+                        <a href="#sectionGoa" class="view" onclick="display('sectionGoa')">
+                            View All
+                            <svg width="20px" height="40px" viewBox="0 0 20 20" class="bi bi-arrow-right-short" fill="red" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="Explore-section-container shadow ">
+                        <img class="w-100" src="https://wallpapercave.com/wp/Y28YIog.jpg" />
+                        <h1 class="Explore-section-container-name pt-3">Name:<span class="Explore-section-container-span"> Kumble Fort </span></h1>
+                        <h1 class="Explore-section-container-name">Place:<span class="Explore-section-container-span"> Rajasthan</span></h1>
+                        <a href="#sectionKumbleFort" class="view" onclick="display('sectionKumbleFort')">
+                            View All
+                            <svg width="20px" height="40px" viewBox="0 0 20 20" class="bi bi-arrow-right-short" fill="red" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="Explore-section-container shadow ">
+                        <img class="w-100" src="https://wallpapercave.com/wp/wp6539259.jpg" />
+                        <h1 class="Explore-section-container-name pt-3">Name:<span class="Explore-section-container-span"> Charminar </span></h1>
+                        <h1 class="Explore-section-container-name">Place:<span class="Explore-section-container-span"> Hyderabad</span></h1>
+                        <a href="#sectionCharminar" class="view" onclick="display('sectionCharminar')">
+                            View All
+                            <svg width="20px" height="40px" viewBox="0 0 20 20" class="bi bi-arrow-right-short" fill="red" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="Explore-section-container shadow ">
+                        <img class="w-100" src="https://wallpapercave.com/wp/wp11476000.jpg" />
+                        <h1 class="Explore-section-container-name pt-3">Name:<span class="Explore-section-container-span"> Kedarnath </span></h1>
+                        <h1 class="Explore-section-container-name">Place:<span class="Explore-section-container-span"> Uttarkhand</span></h1>
+                        <a href="#sectionKedarnath" class="view" onclick="display('sectionKedarnath')">
+                            View All
+                            <svg width="20px" height="40px" viewBox="0 0 20 20" class="bi bi-arrow-right-short" fill="red" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="Explore-section-container shadow">
+                        <img class="w-100" src="https://wallpapercave.com/wp/wp7850640.jpg" />
+                        <h1 class="Explore-section-container-name pt-3">Name:<span class="Explore-section-container-span"> Wayanad </span></h1>
+                        <h1 class="Explore-section-container-name">Place:<span class="Explore-section-container-span"> Kerala</span></h1>
+                        <a href="#sectionWayanad" class="view" onclick="display('sectionWayanad')">
+                            View All
+                            <svg width="20px" height="40px" viewBox="0 0 20 20" class="bi bi-arrow-right-short" fill="red" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12  text-center mb-3">
+                    <button class="Explore-section-button" onclick="display('sectionHome')">Back</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="sectionTajmahal">
+
+        <div class="container-fluid shadow taj-bg">
+            <div class="row">
+                <div class="bg p-2">
+                    <div class="col-12">
+                        <div class="Tajmahal-con">
+                            <iframe width="100%" height="500" src="https://www.youtube-nocookie.com/embed/44rTTLjZZz4?si=fjC7AulCKC0YlWQ5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <h1 class="taj-desHead p-2 m-2">Description</h1>
+                            <p class="Tajmahal-des p-2 m-2">The Taj Mahal is located on the right bank of the Yamuna River in a vast Mughal garden that encompasses nearly 17 hectares, in the Agra District in Uttar Pradesh. It was built by Mughal Emperor Shah Jahan in memory of his wife Mumtaz Mahal with construction starting in 1632 AD and completed in 1648 AD, with the mosque, the guest house and the main gateway on the south, the outer courtyard and its cloisters were added subsequently and completed in 1653 AD. The existence of several historical and Quaranic inscriptions in Arabic script have facilitated setting the chronology of Taj Mahal. For its construction, masons, stone-cutters, inlayers, carvers, painters, calligraphers, dome builders and other artisans were requisitioned from the whole of the empire and also from the Central Asia and Iran. Ustad-Ahmad Lahori was the main architect of the Taj Mahal.</p>
+                            <h1 class="taj-desHead p-2 m-2">Location</h1>
+                            <div class="text-center map">
+                                <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5969.388315717274!2d78.04176063557095!3d27.174548148670457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39747121d702ff6d%3A0xdd2ae4803f767dde!2sTaj%20Mahal!5e0!3m2!1sen!2sin!4v1693497976210!5m2!1sen!2sin" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <p>
+            <button class="btn btn-dark m-3" type="button" data-toggle="collapse" data-target="#collapseWidthExample" title="View Hotels NearBy" aria-expanded="false" aria-controls="collapseWidthExample">
+                Nearby Hotels
+            </button>
+        </p>
+
+
+
+        <div class="container-fluid hotels shadow collapse width" id="collapseWidthExample">
+            <div class="row m-5 p-2">
+
+                <div class="col-12 col-md-3 col-lg-4">
+                    <div class="">
+                        <img class="w-100" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/d3/f4/41/deluxe-room--v15875955.jpg?w=1200&h=-1&s=1" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-8">
+                    <div class="  pt-3">
+                        <h1 class="hotel-name">Hotel Sidhartha</h1>
+                        <p class="hotel-add">2/95 Western Gate Taj - Mahal Taj Mahal Road | Tajganj, Agra 282001, India0.6 km from Taj Mahal
+                            <br />#1 Best Value of 2,069 places to stay in Agra
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-fluid hotels shadow collapse width" id="collapseWidthExample">
+            <div class="row m-5 p-2">
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="">
+                        <img class="w-100" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/07/d3/73/amenities.jpg?w=1200&h=-1&s=1" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-8">
+                    <div class="  pt-3">
+                        <h1 class="hotel-name">The Oberoi Amarvilas</h1>
+                        <p class="hotel-add">Taj East Gate, Agra 282001, India1.0 km from Taj Mahal
+                            <br />#2 Best Value of 2,069 places to stay in Agra
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="col-12 text-center m-3">
+            <button class="Explore-section-button" onclick="display('sectionHome')">Home</button>
+            <button class="Explore-section-button" onclick="display('sectionExplore')">Back</button>
+        </div>
+
+    </div>
+
+    <div id="sectionRedfort">
+
+        <div class="container-fluid shadow pt-3 mb-3">
+            <div class="row">
+                <div class="taj-bg p-2">
+                    <div class="col-12">
+                        <div class="Tajmahal-con mb-3">
+                            <iframe width="100%" height="500" src="https://www.youtube-nocookie.com/embed/NXCmoYUSe24?si=ZqXvriHOLWOgGaoP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <h1 class="taj-desHead p-2 m-2">Description</h1>
+                            <p class="Tajmahal-des p-2 m-2">The Red Fort, the largest monument in Delhi,is one of its most popular tourist destinations and attracts thousands of visitors every year.It is a monument of national significance; every year on India's Independence Day (15 August), the prime minister of India hoists the country's flag at the Red Fort and delivers a nationally broadcast speech from its ramparts.The fort also appears on the back of the ₹500 note of the Mahatma Gandhi New Series of the Indian rupee.The World Heritage Convention characterises the Red Fort as representing "the zenith of Mughal creativity". The fort synthesises Islamic palace structure with local traditions, resulting in a confluence of "Persian, Timurid, and Hindu architecture". The fort served as an inspiration for later buildings and gardens across the Indian subcontinent.</p>
+                            <h1 class="taj-desHead p-2 m-2">Location</h1>
+                            <div class="text-center map">
+                                <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.1264801921416!2d77.23398528993131!3d28.65593133802965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd8b88c2ae31%3A0x189b05262e6f222f!2sRed%20Fort%20NewDelhi!5e0!3m2!1sen!2sin!4v1693718315096!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <p>
+            <button class="btn btn-dark m-3" type="button" data-toggle="collapse" data-target="#collapseWidthExample" title="View Hotels NearBy" aria-expanded="false" aria-controls="collapseWidthExample">
+                Nearby Hotels
+            </button>
+        </p>
+
+        <div class="container-fluid hotels shadow collapse width" id="collapseWidthExample">
+            <div class="row m-5 p-2">
+
+                <div class="col-12 col-md-3 col-lg-4">
+                    <div class="">
+                        <img class="w-100" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/37/d2/31/maidens-hotel.jpg?w=800&h=-1&s=1" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-8">
+                    <div class=" pt-3">
+                        <h1 class="hotel-name">Maidens Hotel</h1>
+                        <p class="hotel-add">
+                            7 Shamnath Marg, New Delhi 110054, India<br />
+                            2.5 km from Red Fort<br />
+                            #1 Best Value of 10,000 places to stay in New Delhi
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-fluid hotels shadow collapse width" id="collapseWidthExample">
+            <div class="row m-5 p-2">
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="">
+                        <img class="w-100" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/4f/e8/72/deluxe-room--v12029834.jpg?w=1200&h=-1&s=1" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-8">
+                    <div class="pt-5">
+                        <h1 class="hotel-name">The Prime Balaji Deluxe</h1>
+                        <p class="hotel-add">
+                            8574 Arakashan Road | Pahar Ganj, New Delhi 110055, India<br />
+                            2.5 km from Red Fort<br />
+                            #2 Best Value of 10,000 places to stay in New Delhi
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-12 text-center m-3">
+            <button class="Explore-section-button" onclick="display('sectionHome')">Home</button>
+            <button class="Explore-section-button" onclick="display('sectionExplore')">Back</button>
+        </div>
+    </div>
+
+    <div id="sectionMumbaiGate">
+
+        <div class="container-fluid shadow">
+            <div class="row">
+                <div class="taj-bg p-2">
+                    <div class="col-12">
+                        <div class="Tajmahal-con">
+                            <iframe width="100%" height="500" src="https://www.youtube.com/embed/f0skukjDalg?si=xLIANScKHI5XMniQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <h1 class="taj-desHead p-2 m-2">Description</h1>
+                            <p class="Tajmahal-des p-2 m-2">The Gateway is amongst the prime tourist attractions in Mumbai.The Gateway is a protected monument in Maharashtra under the aegis of the Archaeological Survey of India (ASI).It is a regular gathering place for locals, street vendors, and photographers.In 2012, the Maharashtra Tourism Development Corporation moved the Elephanta Festival of Music and Dance from its original location at Elephanta Caves — where it had been celebrated for 23 years — to the Gateway, due to the increased capacity offered by the venue.The Gateway can host 2,000 to 2,500 people, whereas Elephanta Caves could host only 700 to 800.
+                                Several films, such as Bhai Bhai (1956), Gateway of India (1957), Shararat (1959), Hum Hindustani (1960), Mr. X in Bombay (1964), Sadhu aur Shaitan (1968), Ansoo aur Muskaan (1970), Andaz (1971),Chhoti si Baat (1976) and Don (1978) have been shot at the Gateway of India.
+                            </p>
+                            <h1 class="taj-desHead p-2 m-2">Location</h1>
+                            <div class="text-center map">
+                                <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.335115236519!2d72.82998240867693!3d18.92094315830961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7d1c73a0d5cad%3A0xc70a25a7209c733c!2sGateway%20Of%20India%20Mumbai!5e0!3m2!1sen!2sin!4v1693721836840!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <p>
+            <button class="btn btn-dark m-3" type="button" data-toggle="collapse" data-target="#collapseWidthExample" title="View Hotels NearBy" aria-expanded="false" aria-controls="collapseWidthExample">
+                Nearby Hotels
+            </button>
+        </p>
+
+        <div class="container-fluid hotels shadow collapse width" id="collapseWidthExample">
+            <div class="row m-5 p-2">
+
+                <div class="col-12 col-md-3 col-lg-4">
+                    <div class="">
+                        <img class="w-100" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/49/ed/40/hotel-suba-palace.jpg?w=300&h=-1&s=1" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-8">
+                    <div class=" pt-3">
+                        <h1 class="hotel-name">Hotel Suba Palace</h1>
+                        <p class="hotel-add">
+                            Battery Street | Near Gateway of India, Apollo Bandar, Mumbai 400001, India<br />
+                            0.3 km from Gateway of India<br />
+                            #1 Best Value of 5,408 places to stay in Mumbai
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-fluid hotels shadow collapse width" id="collapseWidthExample">
+            <div class="row m-5 p-2">
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="">
+                        <img class="w-100" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/25/4f/d9/mediterranean-theme--v16402546.jpg?w=300&h=-1&s=1" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-8">
+                    <div class="pt-3">
+                        <h1 class="hotel-name"> The Gordon House Hotel</h1>
+                        <p class="hotel-add">
+                            5 Gordon House Hotel Battery Street Road No | Apollo Bandar, Colaba, Mumbai 400039, India
+                            <br /> 0.3 km from Gateway of India
+                            <br /> #2 Best Value of 5,408 places to stay in Mumbai
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="col-12 text-center m-3">
+            <button class="Explore-section-button" onclick="display('sectionHome')">Home</button>
+            <button class="Explore-section-button" onclick="display('sectionExplore')">Back</button>
+        </div>
+
+    </div>
+
+    <div id="sectionMysorepalace">
+
+        <div class="container-fluid shadow">
+            <div class="row">
+                <div class="taj-bg p-2">
+                    <div class="col-12">
+                        <div class="Tajmahal-con">
+                            <iframe width="100%" height="500" src="https://www.youtube.com/embed/fYfvk25kJiM?si=-_4jjjORKj7jRKRI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <h1 class="taj-desHead p-2 m-2">Description</h1>
+                            <p class="Tajmahal-des p-2 m-2">
+                                Mysore Palace, also known as Amba Vilas Palace, is a historical palace and a royal residence (house). It is located in Mysore, Karnataka, India. It used to be the official residence of the Wadiyar dynasty and the seat of the Kingdom of Mysore. The palace is in the centre of Mysore, and faces the Chamundi Hills eastward. Mysore is commonly described as the 'City of the Palaces', and there are seven palaces including this one. However, the Mysore Palace refers specifically to the one within the new fort.
+                                The land on which the palace now stands was originally known as mysuru (literally, "citadel"). Swapna built the first palace inside the Old Fort in the 14th century, which was set ablaze and reconstructed multiple times. The Old Fort was built of wood and thus easily caught fire, while the current fort was built of stone, bricks and wood. The current structure was constructed between 1897 and 1912, after the Old Palace burnt down, the current structure is also known as the New Fort. Mysore Palace is one of the most famous tourist attractions in India, after the Taj Mahal, with more than six million annual visitors.
+                            </p>
+                            <h1 class="taj-desHead p-2 m-2">Location</h1>
+                            <div class="text-center map">
+                                <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3898.1576488915694!2d76.65259997483633!3d12.305168229139305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf701103f9a1f9%3A0xc37fbae2a124da0d!2sMysore%20Palace!5e0!3m2!1sen!2sin!4v1693723341895!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <p>
+            <button class="btn btn-dark m-3" type="button" data-toggle="collapse" data-target="#collapseWidthExample" title="View Hotels NearBy" aria-expanded="false" aria-controls="collapseWidthExample">
+                Nearby Hotels
+            </button>
+        </p>
+
+        <div class="container-fluid hotels shadow collapse width" id="collapseWidthExample">
+            <div class="row m-5 p-2">
+
+                <div class="col-12 col-md-3 col-lg-4">
+                    <div class="">
+                        <img class="w-100" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/b8/6a/61/kings-kastle.jpg?w=300&h=-1&s=1" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-8">
+                    <div class=" pt-3">
+                        <h1 class="hotel-name">Kings Kastle</h1>
+                        <p class="hotel-add">
+                            No 69 Ashoka Road, Mysuru (Mysore) 570001, India
+                            <br />0.4 km from Mysuru Palace
+                            <br />#1 Best Value of 1,272 places to stay in Mysuru (Mysore)
+
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-fluid hotels shadow collapse width" id="collapseWidthExample">
+            <div class="row m-5 p-2">
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="">
+                        <img class="w-100" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/4c/88/ea/mysore-dasprakash.jpg?w=300&h=-1&s=1" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-8">
+                    <div class="pt-3">
+                        <h1 class="hotel-name">Mysore Dasprakash</h1>
+                        <p class="hotel-add">
+                            Gandhi Square, Mysuru (Mysore) 570 001, India
+                            <br /> 0.3 km from Mysuru Palace
+                            <br /> #2 Best Value of 1,272 places to stay in Mysuru (Mysore)
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-12 text-center m-3">
+            <button class="Explore-section-button" onclick="display('sectionHome')">Home</button>
+            <button class="Explore-section-button" onclick="display('sectionExplore')">Back</button>
+        </div>
+
+    </div>
+
+
+    <div id="sectionThajavur">
+
+        <div class="container-fluid shadow">
+            <div class="row">
+                <div class="taj-bg p-2">
+                    <div class="col-12">
+                        <div class="Tajmahal-con">
+                            <iframe width="100%" height="500" src="https://www.youtube.com/embed/KC3GAmjn1mg?si=aH10Hcs_4_MNZ801" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <h1 class="taj-desHead p-2 m-2">Description</h1>
+                            <p class="Tajmahal-des p-2 m-2">
+                                Brihadishvara Temple, called Rajarajesvaram (lit.'Lord of Rajaraja') by its builder, and known locally as Thanjai Periya Kovil (lit.'Thanjavur Big Temple') and Peruvudaiyar Kovil, is a Shaivite Hindu temple built in a Chola architectural style located on the south bank of the Cauvery river in Thanjavur, Tamil Nadu, India. It is one of the largest Hindu temples and an exemplar of Tamil architecture. It is also called Dakshina Meru (Meru of the South). Built by Chola emperor Rajaraja I between 1003 and 1010 CE, the temple is a part of the UNESCO World Heritage Site known as the "Great Living Chola Temples", along with the Chola-era Gangaikonda Cholapuram temple and Airavatesvara temple, which are about 70 kilometres (43 mi) and 40 kilometres (25 mi) to its northeast respectively.
+                                The original monuments of this 11th-century temple were built around a moat. It included gopura, the main temple, its massive tower, inscriptions, frescoes, and sculptures predominantly related to Shaivism, but also of Vaishnavism and Shaktism. The temple was damaged in its history and some artwork is now missing. Additional mandapam and monuments were added in the centuries that followed. The temple now stands amidst fortified walls that were added after the 16th century.
+                            </p>
+                            <h1 class="taj-desHead p-2 m-2">Location</h1>
+                            <div class="text-center map">
+                                <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.372148504962!2d79.12708269678954!3d10.782782799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baab89f48fe1221%3A0x1d23cb40e55d84d6!2sBrihadeeswara%20Temple!5e0!3m2!1sen!2sin!4v1693726694552!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <p>
+            <button class="btn btn-dark m-3" type="button" data-toggle="collapse" data-target="#collapseWidthExample" title="View Hotels NearBy" aria-expanded="false" aria-controls="collapseWidthExample">
+                Nearby Hotels
+            </button>
+        </p>
+
+        <div class="container-fluid hotels shadow collapse width" id="collapseWidthExample">
+            <div class="row m-5 p-2">
+
+                <div class="col-12 col-md-3 col-lg-4">
+                    <div class="">
+                        <img class="w-100" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/e6/f1/06/hotel-gnanam.jpg?w=800&h=-1&s=1" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-8">
+                    <div class=" pt-3">
+                        <h1 class="hotel-name">Hotel Gnanam</h1>
+                        <p class="hotel-add">
+                            Anna Salai (Market Road), Thanjavur 613001, India
+                            <br /> 0.9 km from Brihadeeswara Temple
+                            <br /> #1 Best Value of 108 hotels in Thanjavur
+
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-fluid hotels shadow collapse width" id="collapseWidthExample">
+            <div class="row m-5 p-2">
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="">
+                        <img class="w-100" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/09/4d/2d/other.jpg?w=1100&h=-1&s=1" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-8">
+                    <div class="pt-3">
+                        <h1 class="hotel-name"> Svatma</h1>
+                        <p class="hotel-add">
+                            No. 4/1116, Blake Hr Sec School Road | Maharnonbu Chavadi, Thanjavur 613001, India
+                            <br /> 1.8 km from Brihadeeswara Temple
+                            <br /> #2 Best Value of 108 hotels in Thanjavur
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-12 text-center m-3">
+            <button class="Explore-section-button" onclick="display('sectionHome')">Home</button>
+            <button class="Explore-section-button" onclick="display('sectionExplore')">Back</button>
+        </div>
+
+    </div>
+
+
+    <div id="sectionVaranasi">
+
+        <div class="container-fluid shadow">
+            <div class="row">
+                <div class="taj-bg p-2">
+                    <div class="col-12">
+                        <div class="Tajmahal-con">
+                            <iframe width="100%" height="500" src="https://www.youtube.com/embed/rDsOi3MByCI?si=VVIKpNWRXUQcGdx4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <h1 class="taj-desHead p-2 m-2">Description</h1>
+                            <p class="Tajmahal-des p-2 m-2">
+                                Varanasi is an ancient city in India famous for housing many Hindu temples. The city's ancient holiness makes it a sacred geography in Hinduism. The city's temples were erected at different times throughout the history of Varanasi by various kings, saints, monasteries, guilds and communities. The city is one of the largest collection of historic and newly built Hindu temples. Varanasi is an ancient city with deep spiritual roots and significance for the Hindus and it reflects this heritage in over a thousand temples.
+                                Varanasi, also known as Benares, Banaras (Banāras), or Kashi (Kāśī), is the holiest of the seven sacred cities (Sapta Puri) in Hinduism and Jainism, and played an important role in the development of Buddhism. It is one of the oldest continuously inhabited cities in the world. Varanasi is also known as the favourite city of the Hindu deity Shiva.
+                            </p>
+                            <h1 class="taj-desHead p-2 m-2">Location</h1>
+                            <div class="text-center map">
+                                <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115408.09799837616!2d82.90870714750893!3d25.32089491987747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e2db76febcf4d%3A0x68131710853ff0b5!2sVaranasi%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1693727696627!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <p>
+            <button class="btn btn-dark m-3" type="button" data-toggle="collapse" data-target="#collapseWidthExample" title="View Hotels NearBy" aria-expanded="false" aria-controls="collapseWidthExample">
+                Nearby Hotels
+            </button>
+        </p>
+
+        <div class="container-fluid hotels shadow collapse width" id="collapseWidthExample">
+            <div class="row m-5 p-2">
+
+                <div class="col-12 col-md-3 col-lg-4">
+                    <div class="">
+                        <img class="w-100" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/19/ce/16/varuna-burj.jpg?w=300&h=-1&s=1" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-8">
+                    <div class=" pt-3">
+                        <h1 class="hotel-name"> BrijRama Palace, Varanasi | By the Ganges</h1>
+                        <p class="hotel-add">
+                            Darbhanga Ghat, Near Munshi Ghat | Dashashwamedh, Varanasi 221001, India
+                            <br />0.1 km from Kashi Vishwanath Temple
+                            <br />#1 Best Value of 1,242 places to stay in Varanasi
+
+
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-fluid hotels shadow collapse width" id="collapseWidthExample">
+            <div class="row m-5 p-2">
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="">
+                        <img class="w-100" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/27/e2/2b/56/hotel-bachchan-palace.jpg?w=300&h=-1&s=1" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-8">
+                    <div class="pt-3">
+                        <h1 class="hotel-name"> Hotel Bachchan Palace</h1>
+                        <p class="hotel-add">
+                            D-19/30 K, 19/24, Kewalgali, Dashashwamedh | Near Bank Of Baroda ATM , Dashashwamedh Ghat, Varanasi 221001, India
+                            <br /> 0.1 km from Kashi Vishwanath Temple
+                            <br />#2 Best Value of 1,242 places to stay in Varanasi
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-12 text-center m-3">
+            <button class="Explore-section-button" onclick="display('sectionHome')">Home</button>
+            <button class="Explore-section-button" onclick="display('sectionExplore')">Back</button>
+        </div>
+    </div>
+
+    <div id="sectionShyok">
+
+        <div class="container-fluid shadow">
+            <div class="row">
+                <div class="taj-bg p-2">
+                    <div class="col-12">
+                        <div class="Tajmahal-con">
+                            <iframe width="100%" height="500" src="https://www.youtube.com/embed/XIYkO06M3rQ?si=a6WQQxIq7GJzGob_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <h1 class="taj-desHead p-2 m-2">Description</h1>
+                            <p class="Tajmahal-des p-2 m-2">
+                                The Shyok River is a tributary of the Indus River that flows through northern Ladakh and enters Gilgit–Baltistan, spanning some 550 km (340 mi).
+
+                                The Shyok River originates at the Rimo Glacier. Its alignment is very unusual, originating from the Rimo glacier, it flows in a southeasterly direction and, joining the Pangong range, it takes a northwestern turn, flowing parallel to its previous path. Shyok Valley widens at the confluence with the Nubra River but suddenly turns into a narrow gorge near Yagulung (34.77°N 77.14°E), continuing through Bogdang, Turtuk and Tyakshi before crossing into Baltistan. The valley again widens near its Saltoro River junction at Ghursay. The river joins the Indus at Keris, east of the town of Skardu.
+
+                                The Nubra River, originating from the Siachen glacier, also behaves like the Shyok. Before Diskit, the southeasterly flowing river Nubra takes a northwest turn on meeting the river Shyok. The similarity in the courses of these two important rivers probably indicates a series of paleolithic fault lines trending northwest-southeast in delimiting the upper courses of the rivers.
+                            </p>
+                            <h1 class="taj-desHead p-2 m-2">Location</h1>
+                            <div class="text-center map">
+                                <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d418408.70613930887!2d76.21754265533168!3d34.98622282528381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38fcade8e3c23cc9%3A0x79673e5db5be0551!2sShyok%20River!5e0!3m2!1sen!2sin!4v1693747426853!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <p>
+            <button class="btn btn-dark m-3" type="button" data-toggle="collapse" data-target="#collapseWidthExample" title="View Hotels NearBy" aria-expanded="false" aria-controls="collapseWidthExample">
+                Nearby Hotels
+            </button>
+        </p>
+
+        <div class="container-fluid hotels shadow collapse width" id="collapseWidthExample">
+            <div class="row m-5 p-2">
+
+                <div class="col-12 col-md-3 col-lg-4">
+                    <div class="">
+                        <img class="w-100" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/67/9f/2b/ladakh-sarai.jpg?w=1200&h=-1&s=1" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-8">
+                    <div class=" pt-3">
+                        <h1 class="hotel-name">The Driftwood Ladakh</h1>
+                        <p class="hotel-add">
+                            Shey Yomka near Church, Shey 194101 India<br />
+                            30.4 miles from Shyok River Lodge<br />
+                            #2 Best Value of 201 Hotels near Shyok River Lodge
+
+
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-fluid hotels shadow collapse width" id="collapseWidthExample">
+            <div class="row m-5 p-2">
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="">
+                        <img class="w-100" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/fc/c1/3a/the-verda-driftwood-ladakh.jpg?w=1200&h=-1&s=1" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-8">
+                    <div class="pt-3">
+                        <h1 class="hotel-name"> The Driftwood Ladakh</h1>
+                        <p class="hotel-add">
+                            Shey Yomka near Church, Shey 194101 India<br />
+                            30.4 miles from Shyok River Lodge<br />
+                            #2 Best Value of 201 Hotels near Shyok River Lodge
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-12 text-center m-3">
+            <button class="Explore-section-button" onclick="display('sectionHome')">Home</button>
+            <button class="Explore-section-button" onclick="display('sectionExplore')">Back</button>
+        </div>
+
+    </div>
+
+
+    <div id="sectionGoa">
+
+        <div class="container-fluid shadow">
+            <div class="row">
+                <div class="taj-bg p-2">
+                    <div class="col-12">
+                        <div class="Tajmahal-con">
+                            <iframe width="100%" height="500" src="https://www.youtube.com/embed/82bPwndF-J0?si=njj38U_Z9vdILmVQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <h1 class="taj-desHead p-2 m-2">Description</h1>
+                            <p class="Tajmahal-des p-2 m-2">
+                                Calangute is a town in the North Goa district of the Indian state of Goa. It is famous for its beach, the largest in North Goa and a popular tourist destination. The peak tourist season is during Christmas and New Year, and during the summer in May. During the monsoon season, from June through September, the sea can be rough and swimming is prohibited. The beach offers water sport activities like parasailing and water skiing, among others.
+                                As of the 2011 India census,Calangute had a population of 13,810. Males constituted 54% of the population and females 46%. Calangute had an average literacy rate of 73%, higher than the national average of 59.5%; male literacy was 78% and female literacy 67%. 10% of the population was under 6 years of age.
+                            </p>
+                            <h1 class="taj-desHead p-2 m-2">Location</h1>
+                            <div class="text-center map">
+                                <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30750.694581225853!2d73.73308989898746!3d15.546875939492937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfea0148f4ed2b%3A0xcb592fad5d257d17!2sCalangute%20Beach!5e0!3m2!1sen!2sin!4v1693749230100!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <p>
+            <button class="btn btn-dark m-3" type="button" data-toggle="collapse" data-target="#collapseWidthExample" title="View Hotels NearBy" aria-expanded="false" aria-controls="collapseWidthExample">
+                Nearby Hotels
+            </button>
+        </p>
+
+        <div class="container-fluid hotels shadow collapse width" id="collapseWidthExample">
+            <div class="row m-5 p-2">
+
+                <div class="col-12 col-md-3 col-lg-4">
+                    <div class="">
+                        <img class="w-100" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/bd/28/a8/img-20181214-143431-largejpg.jpg?w=1100&h=-1&s=1" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-8">
+                    <div class=" pt-3">
+                        <h1 class="hotel-name"> La Vie Woods</h1>
+                        <p class="hotel-add">
+                            Calangute-Baga Rd | Next to Meera, Calangute 403516, India
+                            <br />0.5 km from Calangute Beach
+                            <br />#1 Best Value of 6,415 places to stay in Calangute
+
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-fluid hotels shadow collapse width" id="collapseWidthExample">
+            <div class="row m-5 p-2">
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="">
+                        <img class="w-100" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/3e/0f/aa/pool--v16367280.jpg?w=1200&h=-1&s=1" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-8">
+                    <div class="pt-3">
+                        <h1 class="hotel-name">Chalston Beach Resort</h1>
+                        <p class="hotel-add">
+                            6/32 B, Khobra Waddo, Calangute 403516, India<br />
+                            0.4 km from Calangute Beach<br />
+                            #2 Best Value of 6,415 places to stay in Calangute
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-12 text-center m-3">
+            <button class="Explore-section-button" onclick="display('sectionHome')">Home</button>
+            <button class="Explore-section-button" onclick="display('sectionExplore')">Back</button>
+        </div>
+
+    </div>
+
+    <div id="sectionKumbleFort">
+
+        <div class="container-fluid shadow">
+            <div class="row">
+                <div class="taj-bg p-2">
+                    <div class="col-12">
+                        <div class="Tajmahal-con">
+                            <iframe width="100%" height="500" src="https://www.youtube-nocookie.com/embed/9zwUZTv95cw?si=_dZ4DY3XSowmUXhk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <h1 class="taj-desHead p-2 m-2">Description</h1>
+                            <p class="Tajmahal-des p-2 m-2">
+                                Kumbhalgarh (literally "Kumbhal fort"), also known as the Great Wall of India, is a Mewar fortress on the westerly range of Aravalli Hills, just about 48 km from Rajsamand city in the Rajsamand district of the Rajasthan state in western India. It is located about 84 km from Udaipur. It is a World Heritage Site included in Hill Forts of Rajasthan. It was built during the 15th century by Rana Kumbha.
+                                In 2013, at the 37th session of the World Heritage Committee held in Phnom Penh, Cambodia, Kumbhalgarh Fort, along with five other forts of Rajasthan, was declared a UNESCO World Heritage Site under the group Hill Forts of Rajasthan.
+                                The chief architect who built this fort was Mandan, who documented his style of work in his text, Rajvallabh.
+                                The fort is among the largest fort complexes in the world.
+                            </p>
+                            <h1 class="taj-desHead p-2 m-2">Location</h1>
+                            <div class="text-center map">
+                                <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32618.25401362471!2d73.57141544218442!3d25.15179100542691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39682237f6aa372b%3A0xa29571865cb41d01!2sKumbhalgarh%20Fort!5e0!3m2!1sen!2sin!4v1693750227693!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <p>
+            <button class="btn btn-dark m-3" type="button" data-toggle="collapse" data-target="#collapseWidthExample" title="View Hotels NearBy" aria-expanded="false" aria-controls="collapseWidthExample">
+                Nearby Hotels
+            </button>
+        </p>
+
+        <div class="container-fluid hotels shadow collapse width" id="collapseWidthExample">
+            <div class="row m-5 p-2">
+
+                <div class="col-12 col-md-3 col-lg-4">
+                    <div class="">
+                        <img class="w-100" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/2e/2b/cc/kavish-the-haveli-resort.jpg?w=1100&h=-1&s=1" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-8">
+                    <div class=" pt-3">
+                        <h1 class="hotel-name">Kavish The Haveli Resort</h1>
+                        <p class="hotel-add">
+                            Saira Rd | Maharana Pratap, Circle, Kumbhalgarh 313325, India<br />
+                            0.2 km from Kumbhalgarh Fort<br />
+                            #1 Best Value of 2,023 places to stay in Kumbhalgarh
+
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-fluid hotels shadow collapse width" id="collapseWidthExample">
+            <div class="row m-5 p-2">
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="">
+                        <img class="w-100" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/b7/af/73/bodhi-a-boutique-hotel.jpg?w=1200&h=-1&s=1" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-8">
+                    <div class="pt-3">
+                        <h1 class="hotel-name">Bodhi - A Boutique Hotel</h1>
+                        <p class="hotel-add">
+                            Kadia Road, Kumbhalgarh 313325, India<br />
+                            0.8 km from Kumbhalgarh Fort<br />
+                            #2 Best Value of 2,023 places to stay in Kumbhalgarh
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-12 text-center m-3">
+            <button class="Explore-section-button" onclick="display('sectionHome')">Home</button>
+            <button class="Explore-section-button" onclick="display('sectionExplore')">Back</button>
+        </div>
+
+    </div>
+
+    <div id="sectionCharminar">
+
+        <div class="container-fluid shadow">
+            <div class="row">
+                <div class="taj-bg p-2">
+                    <div class="col-12">
+                        <div class="Tajmahal-con">
+                            <iframe width="100%" height="500" src="https://www.youtube-nocookie.com/embed/uMQYbfgHVxk?si=j8EKc94ADqXEcABG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <h1 class="taj-desHead p-2 m-2">Description</h1>
+                            <p class="Tajmahal-des p-2 m-2">
+                                The Charminar (lit.'four minarets') is a monument located in Hyderabad, Telangana, India. Constructed in 1591, the landmark is a symbol of Hyderabad and officially incorporated in the emblem of Telangana. The Charminar's long history includes the existence of a mosque on its top floor for more than 425 years. While both historically and religiously significant, it is also known for its popular and busy local markets surrounding the structure, and has become one of the most frequented tourist attractions in Hyderabad. Charminar is also a site of numerous festival celebrations, such as Eid-ul-adha and Eid al-Fitr, as it is adjacent to the city's main mosque, the Makkah Masjid.
+
+                                The Charminar is situated on the east bank of Musi River.To the west lies the Laad Bazaar, and to the southwest lies the richly ornamented granite Makkah Masjid.It is listed as an archaeological and architectural treasure on the official list of monuments prepared by the Archaeological Survey of India. The English name is a translation and combination of the Urdu words chār and minar or meenar, translating to "Four Pillars"; the eponymous towers are ornate minarets attached and supported by four grand arches.
+                            </p>
+                            <h1 class="taj-desHead p-2 m-2">Location</h1>
+                            <div class="text-center map">
+                                <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.044975567536!2d78.47208957491898!3d17.361568703548922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb978a6e1a939b%3A0xcb5a69e4aaf113fb!2sCharminar!5e0!3m2!1sen!2sin!4v1693750940714!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <p>
+            <button class="btn btn-dark m-3" type="button" data-toggle="collapse" data-target="#collapseWidthExample" title="View Hotels NearBy" aria-expanded="false" aria-controls="collapseWidthExample">
+                Nearby Hotels
+            </button>
+        </p>
+
+        <div class="container-fluid hotels shadow collapse width" id="collapseWidthExample">
+            <div class="row m-5 p-2">
+
+                <div class="col-12 col-md-3 col-lg-4">
+                    <div class="">
+                        <img class="w-100" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/3f/a7/38/oyo-18396-hotel-tara.jpg?w=1000&h=-1&s=1" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-8">
+                    <div class=" pt-3">
+                        <h1 class="hotel-name"> Hotel Tara International</h1>
+                        <p class="hotel-add">
+                            Siddiamber Bazar Main Road, Hyderabad 500012, India<br />
+                            1.7 km from Charminar<br />
+                            #1 Best Value of 2,636 places to stay in Hyderabad
+
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-fluid hotels shadow collapse width" id="collapseWidthExample">
+            <div class="row m-5 p-2">
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="">
+                        <img class="w-100" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/04/94/5d/2d/hotel-rajdhani.jpg?w=1200&h=-1&s=1" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-8">
+                    <div class="pt-3">
+                        <h1 class="hotel-name">Hotel Rajdhani</h1>
+                        <p class="hotel-add">
+                            15 - 1 - 503 Jain Mandir Rd | Siddiamber Bazaar, Hyderabad 500012, India<br />
+                            1.7 km from Charminar<br />
+                            #2 Best Value of 2,636 places to stay in Hyderabad
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-12 text-center m-3">
+            <button class="Explore-section-button" onclick="display('sectionHome')">Home</button>
+            <button class="Explore-section-button" onclick="display('sectionExplore')">Back</button>
+        </div>
+
+    </div>
+
+    <div id="sectionKedarnath">
+
+        <div class="container-fluid shadow">
+            <div class="row">
+                <div class="taj-bg p-2">
+                    <div class="col-12">
+                        <div class="Tajmahal-con">
+                            <iframe width="100%" height="500" src="https://www.youtube-nocookie.com/embed/cxlIUOMUrS4?si=jCSQrxtI8VHZ_cCO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <h1 class="taj-desHead p-2 m-2">Description</h1>
+                            <p class="Tajmahal-des p-2 m-2">
+                                Kedarnath is a town and Nagar Panchayat in Rudraprayag district of Uttarakhand, India, known primarily for the Kedarnath Temple. It is approximately 86 kilometres from Rudraprayag, the district headquarter. Kedarnath is the most remote of the four Chota Char Dham pilgrimage sites. It is located in the Himalayas, about 3,583 m (11,755 ft) above sea level near the Chorabari Glacier, which is the source of the Mandakini river. The town is flanked by snow-capped peaks, most prominently the Kedarnath Mountain. The nearest road head is at Gaurikund about 16 km away. The town suffered extensive destruction during June 2013 from the Flash Floods caused by torrential rains in Uttarakhand state.
+                                Kedarnath has been a pilgrimage centre since ancient times.The temple's construction is credited to the Pandava brothers mentioned in the Mahabharata. However, the Mahabharata does not mention any place called Kedarnath. One of the earliest references to Kedarnath occurs in the Skanda Purana (c. 7th-8th century), which names Kedara (Kedarnath) as the place where Lord Shiva released the holy waters of Ganga from his matted hair, resulting in the formation of the Ganges River.
+                            </p>
+                            <h1 class="taj-desHead p-2 m-2">Location</h1>
+                            <div class="text-center map">
+                                <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4966.890913001633!2d79.06229510654192!3d30.734471549913263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39083ee051e628b1%3A0x167ce4efaf440f1e!2sKedarnath%2C%20Uttarakhand%20246445!5e0!3m2!1sen!2sin!4v1693751669608!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <p>
+            <button class="btn btn-dark m-3" type="button" data-toggle="collapse" data-target="#collapseWidthExample" title="View Hotels NearBy" aria-expanded="false" aria-controls="collapseWidthExample">
+                Nearby Hotels
+            </button>
+        </p>
+
+        <div class="container-fluid hotels shadow collapse width" id="collapseWidthExample">
+            <div class="row m-5 p-2">
+
+                <div class="col-12 col-md-3 col-lg-4">
+                    <div class="">
+                        <img class="w-100" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/f9/33/da/the-hills-inn-resort.jpg?w=1200&h=-1&s=1" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-8">
+                    <div class=" pt-3">
+                        <h1 class="hotel-name">The Hills Inn</h1>
+                        <p class="hotel-add">
+                            Jaakhdhar Bansu Road | Ukhimath Rudraprayag, Guptkashi 246439, India<br />
+                            23.2 km from Kedarnath Temple<br />
+                            #1 Best Value of 1,036 places to stay in Gopeshwar
+
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-fluid hotels shadow collapse width" id="collapseWidthExample">
+            <div class="row m-5 p-2">
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="">
+                        <img class="w-100" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/29/fc/19/behl-forest-retreat-entire.jpg?w=1200&h=-1&s=1" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-8">
+                    <div class="pt-3">
+                        <h1 class="hotel-name">Behl Forest Retreat</h1>
+                        <p class="hotel-add">
+                            Kedarnath Road Khumera 5km Ahead From Guptakashi, Kedarnath 246445, India<br />
+                            20.1 km from Kedarnath Temple<br />
+                            #2 Best Value of 1,036 places to stay in Gopeshwar
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-12 text-center m-3">
+            <button class="Explore-section-button" onclick="display('sectionHome')">Home</button>
+            <button class="Explore-section-button" onclick="display('sectionExplore')">Back</button>
+        </div>
+
+    </div>
+
+    <div id="sectionWayanad">
+
+        <div class="container-fluid shadow">
+            <div class="row">
+                <div class="taj-bg p-2">
+                    <div class="col-12">
+                        <div class="Tajmahal-con">
+                            <iframe width="100%" height="500" src="https://www.youtube-nocookie.com/embed/l4TelPR_Mzg?si=Fygr3mhFsaReQ6-0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <h1 class="taj-desHead p-2 m-2">Description</h1>
+                            <p class="Tajmahal-des p-2 m-2">
+                                Wayanad (Malayalam: [ʋɐjɐnaːɖɨ̆]) is a district in the north-east of the Indian state of Kerala, with administrative headquarters at the municipality of Kalpetta. It is the only plateau in Kerala. The Wayanad Plateau forms a continuation of the Mysore Plateau, the southern portion of Deccan Plateau which links the Western Ghats with the Eastern Ghats. It is set high in the Western Ghats with altitudes ranging from 700 to 2100 meters. Vellari Mala, a 2,240 m (7,349 ft) high peak situated on the trijunction of Wayanad, Malappuram, and Kozhikode districts, is the highest point in Wayanad district. The district was formed on 1 November 1980 as the 12th district in Kerala, by carving out areas from Kozhikode and Kannur districts. An area of 885.92 km2 of the district is forested. Wayanad has three municipal towns—Kalpetta, Mananthavady and Sulthan Bathery. There are many indigenous tribes in this area. The Kabini River, a tributary of Kaveri River, originates at Wayanad. Wayanad district, along with the Chaliyar valley in neighbouring Nilambur (Eastern Eranad region) in Malappuram district, is known for natural gold fields, which are also seen in other parts of the Nilgiri Biosphere Reserve. Chaliyar river, which is the fourth longest river of Kerala, originates on the Wayanad plateau. The historically important Edakkal Caves are located in Wayanad district.
+                            </p>
+                            <h1 class="taj-desHead p-2 m-2">Location</h1>
+                            <div class="text-center map">
+                                <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31254.683983190982!2d76.06670704534127!3d11.706061087653492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba60aca72a6f31d%3A0x80f9947968021a09!2sWayanad%2C%20Kerala!5e0!3m2!1sen!2sin!4v1693752536090!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <p>
+            <button class="btn btn-dark m-3" type="button" data-toggle="collapse" data-target="#collapseWidthExample" title="View Hotels NearBy" aria-expanded="false" aria-controls="collapseWidthExample">
+                Nearby Hotels
+            </button>
+        </p>
+
+        <div class="container-fluid hotels shadow collapse width" id="collapseWidthExample">
+            <div class="row m-5 p-2">
+
+                <div class="col-12 col-md-3 col-lg-4">
+                    <div class="">
+                        <img class="w-100" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/2e/5b/0d/lakerose-wayanad-resort.jpg?w=1200&h=-1&s=1" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-8">
+                    <div class=" pt-3">
+                        <h1 class="hotel-name">LakeRose Wayanad Resort</h1>
+                        <p class="hotel-add">
+                            Near Karapuzha Dam Near St.Sebastians Church,
+                            <br />Vazhavatta, Kalpetta 673122 India
+                            <br />#1 Best Value of 1,202 places to stay in Wayanad District
+
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-fluid hotels shadow collapse width" id="collapseWidthExample">
+            <div class="row m-5 p-2">
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="">
+                        <img class="w-100" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/73/33/57/exterior.jpg?w=1200&h=-1&s=1" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-8">
+                    <div class="pt-3">
+                        <h1 class="hotel-name">Sterling Wayanad</h1>
+                        <p class="hotel-add">
+                            Valluvadi Road, Kidanganad 673592 India<br />
+                            #2 Best Value of 1,202 places to stay in Wayanad District
+
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-12 text-center m-3">
+            <button class="Explore-section-button" onclick="display('sectionHome')">Home</button>
+            <button class="Explore-section-button" onclick="display('sectionExplore')">Back</button>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
